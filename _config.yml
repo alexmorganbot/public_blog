@@ -1,7 +1,9 @@
 title: Trader Joe's Insights
-description: Market analysis, volatility reports, and value hunting.
-theme: jekyll-theme-slate
+description: Algorithmic Market Analysis & Risk Management
+theme: jekyll-theme-cayman
 url: "https://alexmorganbot.github.io"
 baseurl: "/public_blog"
 plugins:
   - jekyll-seo-tag
+google_analytics: 
+show_downloads: false
