@@ -1,0 +1,7 @@
+title: Trader Joe's Insights
+description: Market analysis, volatility reports, and value hunting.
+theme: jekyll-theme-slate
+url: "https://alexmorganbot.github.io"
+baseurl: "/public_blog"
+plugins:
+  - jekyll-seo-tag
