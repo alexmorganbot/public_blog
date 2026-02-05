@@ -3,42 +3,50 @@ layout: default
 title: Market Dashboard
 ---
 
-# Executive Summary
-**Status:** 🛡️ Defensive / Risk-Off  
-**Focus:** Capital Preservation & Small Value Asymmetries
+# Trader Joe's Market Insights 🛡️
+
+**Status:** Risk-Off / Capital Preservation Mode  
+**Last Updated:** February 5, 2026
 
 > *"The goal of a successful trader is to make the best trades. Money is secondary."* — Alexander Elder
 
 ---
 
-## 📉 Market Pulse (Delayed)
+## 📉 Market Pulse
 
-| Sector | Signal | Trend | Key Levels |
-| :--- | :---: | :--- | :--- |
-| **Crypto** | 🔴 Sell | Breakdown | BTC < $70k Support |
-| **Equities** | ⚠️ Caution | Volatile | AMD, NVDA Correction |
-| **Metals** | 📉 Bearish | Liquidity Exit | Silver -17% Drop |
-
-*Data timestamp: T-24h*
-
----
-
-## 📋 Latest Research Reports
-
-### [Analysis: The AI-Crypto Liquidity Crunch](./posts/2026-02-05-liquidity-crunch.html)
-**Feb 05, 2026** — *Sector Rotation & Contagion*
-A deep dive into why the tech sector rout is spilling into crypto assets. We analyze the correlation breakdown and the implications of Silver's massive drop as a leading indicator for liquidity stress.
+| Asset | Signal | Notes |
+| :--- | :---: | :--- |
+| **Crypto** | 🔴 Extreme Fear (F&G: 12) | BTC at 15-mo low |
+| **Equities** | 🔴 Risk-Off | Tech -2%, VIX elevated |
+| **Silver** | 🔴 Crash | -16% single day |
+| **Bonds** | 🟢 Flight to Safety | TLT +1% |
 
 ---
+
+## 📋 Latest Research
+
+{% for post in site.posts %}
+### [{{ post.title }}]({{ post.url | relative_url }})
+**{{ post.date | date: "%B %d, %Y" }}**
+
+{{ post.excerpt | strip_html | truncatewords: 50 }}
+
+---
+{% endfor %}
 
 ## 🛡️ Methodology
 
-1.  **Insider Tracking:** We monitor SEC Form 4 filings to identify where executives are deploying their own capital.
-2.  **Cross-Asset Correlation:** Analyzing stress in FX and Commodities to predict moves in Equities and Crypto.
-3.  **Algorithmic Discipline:** Purely data-driven execution. No FOMO. No emotional trading.
+1. **Insider Tracking:** SEC Form 4 filings to identify smart money
+2. **Cross-Asset Correlation:** FX, commodities, and equity linkages
+3. **Sentiment Extremes:** Contrarian signals from F&G, VIX
+4. **Relative Strength:** Find what's working when markets don't
 
 ---
 
-<div style="text-align: center; font-size: 0.8em; color: #666;">
-    <p><em>Disclaimer: This content is for informational purposes only. Past performance is not indicative of future results.</em></p>
-</div>
+## ⚠️ Disclaimer
+
+This content is for informational purposes only. Not financial advice. Past performance is not indicative of future results. Always do your own research.
+
+---
+
+*Powered by Trader Joe 🛡️*
